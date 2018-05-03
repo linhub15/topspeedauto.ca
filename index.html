@@ -1,22 +1,32 @@
 ---
 layout: default
 ---
-<div>
+<section>
   <h1>Top Speed Auto</h1>
-</div>
-<div id="address">
+</section>
+<section id="address">
   <p>{{ site.business_address }}</p>
-  <div id="map"></div>
-</div>
-
-<div id="hours">
-  <div>
-    <label>Mon</label><p>9:00 AM - 6:00 PM</p>
-    <label>Tue</label><p>9:00 AM - 6:00 PM</p>
-    <label>Wed</label><p>9:00 AM - 6:00 PM</p>
-    <label>Thu</label><p>9:00 AM - 6:00 PM</p>
-    <label>Fri</label><p>9:00 AM - 6:00 PM</p>
-    <label>Sat</label><p>9:00 AM - 1:00 PM <span>By Appointment</span></p>
-    <label>Sun</label><p>Closed</p>
+  <div id="map">
+    <iframe
+    width="100%"
+    height="auto"
+    frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBELubRteDXYPBq4OwwKX1P0ozDDo2XsQs
+      &q=Top+Speed+Auto+Edmonton" allowfullscreen>
+    </iframe>
   </div>
-</div>
+</section>
+
+<section id="hours">
+  <div class="container">
+    <ul>
+      <li>Mon 9:00 AM - 6:00 PM</li>
+      <li>Tue 9:00 AM - 6:00 PM</li>
+      <li>Wed 9:00 AM - 6:00 PM</li>
+      <li>Thu 9:00 AM - 6:00 PM</li>
+      <li>Fri 9:00 AM - 6:00 PM</li>
+      <li>Sat 9:00 AM - 1:00 PM <span>By Appointment</span></li>
+      <li>Sunday Closed</li>
+    </ul>
+  </div>
+</section>

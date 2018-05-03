@@ -1,4 +1,17 @@
 section {
   background-color: #00EEEE;
-  width: 100%;
+}
+
+#hours ul{
+	list-style-type: none;
+	max-width: 50rem;
+	padding-left: 0;
+}
+
+#hours ul li span.weekday {
+	padding-right: 3rem;
+}
+
+#hours ul li span.time {
+	float:right;
 }

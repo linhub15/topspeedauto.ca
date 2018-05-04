@@ -1,5 +1,18 @@
+section.banner {
+  background-image: url("../images/TSA_banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vw;
+}
+
+.xy-center {
+  text-align: center;
+  padding-top: 9vw;
+}
+
+
 section {
-  background-color: #00EEEE;
+  /*background-color: #00EEEE;*/
 }
 
 #hours ul{

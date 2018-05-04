@@ -15,6 +15,10 @@ section {
   /*background-color: #00EEEE;*/
 }
 
+h2 {
+  text-align: center;
+}
+
 #hours ul{
 	list-style-type: none;
 	max-width: 50rem;

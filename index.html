@@ -11,6 +11,7 @@ layout: default
 <section id="address">
   <div id="map" class="col-6">
     <h2>{{ site.business_address }}</h2>
+    <a class="btn btn-primary" href="https://goo.gl/maps/cEzD1tj4T332">Get Directions</a>
     <iframe
     width="100%"
     height="auto"
@@ -25,7 +26,7 @@ layout: default
 </section>
 
 <section id="hours">
-  <h2 class="text-center">Opening Hours</h2>
+  <h2>Opening Hours</h2>
   <div class="d-flex">
     <ul class="mx-auto">
       <li>
@@ -53,27 +54,40 @@ layout: default
   </div>
 </section>
 
+<section id="pricing">
+  <h2>Pricing</h2>
+  <div></div>
+</section>
 <section id="contactForm">
-  <h2 class="text-center">Request a Quote</h2>
-  <div class="d-flex">
-  <form class="mx-auto col-6" method="POST" action="https://www.formingo.co/submit/61b7b161-40c3-43a0-ba22-532c2105005c">
+  <div class="container">
+    
+    <h2>Contact Us</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <p>Phone</p>
+      <p>Email</p>
+    </div>
+  <div class="col-md-6">
+    <h3 class="">Request a Quote</h3>
+    <form class="mx-auto" method="POST" action="https://www.formingo.co/submit/61b7b161-40c3-43a0-ba22-532c2105005c">
+      <div class="form-row">
+        <div class="col-sm-6 mb-2">
+          <input class="form-control" type="text" required="required" name="full_name" placeholder="Name">
+        </div>
 
-    <div class="form-row mb-2">
-      <div class="col">
-        <input class="form-control" type="text" required="required" name="full_name" placeholder="Name">
+        <div class="col-sm-6 mb-2">
+          <input class="form-control" type="email" name="__replyto" required="required" placeholder="Email">
+        </div>
       </div>
-
-      <div class="col">
-        <input class="form-control" type="email" name="__replyto" required="required" placeholder="Email">
+      <div class="form-group">
+        <textarea class="form-control" name="message" id="message" placeholder="Message"></textarea>
       </div>
-    </div>
-    <div class="form-group">
-      <textarea class="form-control" name="message" id="message" placeholder="Message"></textarea>
-    </div>
-    <input type="hidden" name="__redirect" value="{{ site.url }}">
-    <div class="row mb-3">
-      <input class="btn btn-primary mx-auto col-3" type="submit" value="Request a Quote">
-    </div>
-  </form>
-  </div>
+      <input type="hidden" name="__redirect" value="{{ site.url }}">
+      <div class="row mb-3">
+        <input class="btn btn-primary mx-auto" type="submit" value="Request a Quote">
+      </div>
+    </form>
+    </div>  <!-- /.col-6 RIGHT PANEL -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
 </section>

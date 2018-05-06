@@ -11,16 +11,8 @@ layout: default
 <section id="mapHours">
   <div class="container">
     <div class="row">
-      <div id="map" class="col-lg-6">
-      <!-- <a class="btn btn-primary" href="https://goo.gl/maps/cEzD1tj4T332">Get Directions</a> -->
-      <iframe
-      width="100%"
-      height="100%"
-      frameborder="0" style="border:0"
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9480.166702581793!2d-113.6134756!3d53.5570235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7aebccef04d385a!2sTop+Speed+Auto!5e0!3m2!1sen!2sca!4v1525575359960" allowfullscreen>
-      </iframe>
-
-    </div>
+      <div id="map" class="col-lg-6"></div>
+          <!-- <a class="btn btn-primary" href="https://goo.gl/maps/cEzD1tj4T332">Get Directions</a> -->
     <div id="hours" class="col-lg-6 mx-auto align-middle">
       <h2>Opening Hours</h2>
       <div class="d-flex">
@@ -82,3 +74,16 @@ layout: default
     </div>  <!-- /.col-6 RIGHT PANEL -->
 
 </section>
+<script type="text/javascript">
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: {lat: 53.5570235, lng: -113.6134756},
+          disableDefaultUI: true
+        });
+      }
+</script>
+<script async defer
+    src="https://www.google.com/maps/api/js?key=AIzaSyBzJnYwiippHCfNl1LFaD8C5OO4FFxSmfU
+&callback=initMap">
+</script>

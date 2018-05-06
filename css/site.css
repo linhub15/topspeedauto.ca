@@ -22,7 +22,9 @@ section {
 h2 {
   text-align: center;
 }
-
+#map {
+  height: 100%;
+}
 #hours {
   display: flex;
   flex-direction: column;

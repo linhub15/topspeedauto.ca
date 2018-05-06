@@ -2,7 +2,11 @@ section.banner {
   background-image: url("../images/TSA_banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 25vw;
+  /*height: 25vw;*/
+}
+section {
+  padding: 5vh 0;
+  height: 50vh;
 }
 
 .xy-center {
@@ -19,6 +23,12 @@ h2 {
   text-align: center;
 }
 
+#hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #hours ul{
 	list-style-type: none;
 	max-width: 50rem;
@@ -31,4 +41,9 @@ h2 {
 
 #hours ul li span.time {
 	float:right;
+}
+
+img {
+  width: auto;
+  height: 100px;
 }

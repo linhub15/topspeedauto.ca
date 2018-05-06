@@ -8,49 +8,48 @@ layout: default
   </div>
 </section>
 
-<section id="address">
-  <div id="map" class="col-6">
-    <h2>{{ site.business_address }}</h2>
-    <a class="btn btn-primary" href="https://goo.gl/maps/cEzD1tj4T332">Get Directions</a>
-    <iframe
-    width="100%"
-    height="auto"
-    frameborder="0" style="border:0"
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBELubRteDXYPBq4OwwKX1P0ozDDo2XsQs
-      &q=Top+Speed+Auto+Edmonton" allowfullscreen>
-    </iframe>
-  </div>
-  <div id="location-image" col-6>
+<section id="mapHours">
+  <div class="container">
+    <div class="row">
+      <div id="map" class="col-lg-6">
+      <!-- <a class="btn btn-primary" href="https://goo.gl/maps/cEzD1tj4T332">Get Directions</a> -->
+      <iframe
+      width="100%"
+      height="100%"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9480.166702581793!2d-113.6134756!3d53.5570235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7aebccef04d385a!2sTop+Speed+Auto!5e0!3m2!1sen!2sca!4v1525575359960" allowfullscreen>
+      </iframe>
 
-  </div>
-</section>
-
-<section id="hours">
-  <h2>Opening Hours</h2>
-  <div class="d-flex">
-    <ul class="mx-auto">
-      <li>
-        <span class="weekday">Monday</span>
-        <span class="time">9:00 AM - 6:00 PM</span></li>
-      <li>
-        <span class="weekday">Tuesday</span>
-        <span class="time">9:00 AM - 6:00 PM</span></li>
-      <li>
-        <span class="weekday">Wednesday</span>
-        <span class="time">9:00 AM - 6:00 PM</span></li>
-      <li>
-        <span class="weekday">Thursday</span>
-        <span class="time">9:00 AM - 6:00 PM</span></li>
-      <li>
-        <span class="weekday">Friday</span>
-        <span class="time">9:00 AM - 6:00 PM</span></li>
-      <li>
-        <span class="weekday">Saturday (By Appointment)</span>
-        <span class="time">9:00 AM - 1:00 PM</span></li>
-      <li>
-        <span class="weekday">Sunday</span>
-        <span class="time">Closed</span></li>
-    </ul>
+    </div>
+    <div id="hours" class="col-lg-6 mx-auto align-middle">
+      <h2>Opening Hours</h2>
+      <div class="d-flex">
+        <ul class="mx-auto">
+          <li>
+            <span class="weekday">Monday</span>
+            <span class="time">9:00 AM - 6:00 PM</span></li>
+          <li>
+            <span class="weekday">Tuesday</span>
+            <span class="time">9:00 AM - 6:00 PM</span></li>
+          <li>
+            <span class="weekday">Wednesday</span>
+            <span class="time">9:00 AM - 6:00 PM</span></li>
+          <li>
+            <span class="weekday">Thursday</span>
+            <span class="time">9:00 AM - 6:00 PM</span></li>
+          <li>
+            <span class="weekday">Friday</span>
+            <span class="time">9:00 AM - 6:00 PM</span></li>
+          <li>
+            <span class="weekday">Saturday (By Appointment)</span>
+            <span class="time">9:00 AM - 1:00 PM</span></li>
+          <li>
+            <span class="weekday">Sunday</span>
+            <span class="time">Closed</span></li>
+        </ul>
+      </div>
+    </div>
+    </div>
   </div>
 </section>
 
@@ -59,15 +58,8 @@ layout: default
   <div></div>
 </section>
 <section id="contactForm">
-  <div class="container">
-    
     <h2>Contact Us</h2>
-  <div class="row">
-    <div class="col-md-6">
-      <p>Phone</p>
-      <p>Email</p>
-    </div>
-  <div class="col-md-6">
+  <div class="mx-auto col-md-6">
     <h3 class="">Request a Quote</h3>
     <form class="mx-auto" method="POST" action="https://www.formingo.co/submit/61b7b161-40c3-43a0-ba22-532c2105005c">
       <div class="form-row">
@@ -88,6 +80,5 @@ layout: default
       </div>
     </form>
     </div>  <!-- /.col-6 RIGHT PANEL -->
-    </div> <!-- /.row -->
-  </div> <!-- /.container -->
+
 </section>

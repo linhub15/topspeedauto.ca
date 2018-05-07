@@ -119,14 +119,34 @@ layout: default
 
 </section>
 <script type="text/javascript">
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 8,
-          center: {lat: 53.5570235, lng: -113.6134756},
-          disableDefaultUI: true
-        });
-      }
+  function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 53.5570235, lng: -113.6134756},
+    zoom: 15,
+    disableDefaultUI: true
+  });
+
+  var infowindow = new google.maps.InfoWindow();
+  var service = new google.maps.places.PlacesService(map);
+
+  service.getDetails({
+    placeId: 'ChIJ8zTGWyMhoFMRWjhN8M68ruc'
+  }, function(place, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      var marker = new google.maps.Marker({
+        map: map,
+        position: place.geometry.location
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+          'Place ID: ' + place.place_id + '<br>' +
+          place.formatted_address + '</div>');
+        infowindow.open(map, this);
+      });
+    }
+  });
+}
 </script>
 <script src="https://www.google.com/maps/api/js?key=AIzaSyBzJnYwiippHCfNl1LFaD8C5OO4FFxSmfU
-&callback=initMap">
+&&libraries=places&callback=initMap">
 </script>

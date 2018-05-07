@@ -142,10 +142,11 @@ layout: default
       google.maps.event.addListener(marker, 'click', function() {
         infowindow.open(map, this);
       });
+      google.maps.event.trigger(marker, 'click');
     }
   });
 }
-google.maps.event.trigger(marker, 'click');
+
 </script>
 <script src="https://www.google.com/maps/api/js?key=AIzaSyBzJnYwiippHCfNl1LFaD8C5OO4FFxSmfU
 &&libraries=places&callback=initMap">

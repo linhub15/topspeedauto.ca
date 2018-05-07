@@ -6,7 +6,7 @@ section.banner {
 }
 section {
   padding: 5vh 0;
-  height: 50vh;
+  min-height: 50vh;
 }
 
 .xy-center {
@@ -14,16 +14,14 @@ section {
   padding-top: 9vw;
 }
 
-
-section {
-  /*background-color: #00EEEE;*/
-}
-
 h2 {
   text-align: center;
 }
+
 #map {
-  height: 100%;
+  min-height: 250px;
+  height: 25vw;
+  width: 100%;
 }
 #hours {
   display: flex;
@@ -48,4 +46,46 @@ h2 {
 img {
   width: auto;
   height: 100px;
+}
+
+
+.btn-floating {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  outline: 0;
+  display: inline-block;
+  color: #fff;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  overflow: hidden;
+  z-index: 1;
+  line-height: 63px;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  background-color: #26a69a;
+  border-radius: 50%;
+  -webkit-transition: background-color .2s ease-out;
+          transition: background-color .2s ease-out;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+.btn-floating:hover {
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  background-color: #26a69a;
+}
+
+.btn-floating svg {
+  width: inherit;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 56px;
 }

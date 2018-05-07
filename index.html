@@ -13,8 +13,8 @@ layout: default
     <div class="row">
       <div id="map" class="col-lg-6"></div>
           <!-- <a class="btn btn-primary" href="https://goo.gl/maps/cEzD1tj4T332">Get Directions</a> -->
-    <div id="hours" class="col-lg-6 mx-auto align-middle">
-      <h2>Opening Hours</h2>
+    <div id="hours" class="col-lg-6 mx-auto align-middle pt-3">
+      <h2>Business Hours</h2>
       <div class="d-flex">
         <ul class="mx-auto">
           <li>
@@ -45,14 +45,57 @@ layout: default
   </div>
 </section>
 
-<section id="pricing">
-  <h2>Pricing</h2>
-  <div></div>
+<section id="services">
+  <h2>Services</h2>
+  <div class="container">
+    <div class="card-group">
+      <div class="card col-md-3 border-0 mx-auto py-4">
+        <img class="card-img-top" src="/icons/nhor/tires.svg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-text text-center">Wheels &amp; Tires</h3>
+        </div>
+      </div>
+      <div class="card col-md-3 border-0 mx-auto py-4">
+        <img class="card-img-top" src="/icons/nhor/brake.svg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-text text-center">Brakes</h3>
+        </div>
+      </div>
+      <div class="card col-md-3 border-0 mx-auto py-4">
+        <img class="card-img-top" src="/icons/nhor/suspension.svg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-text text-center">Suspension</h3>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card-group mx-auto">
+      <div class="card col-md-3 border-0 mx-auto py-4">
+        <img class="card-img-top" src="/icons/nhor/oil_change.svg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-text text-center">Oil Change</h3>
+        </div>
+      </div>
+      <div class="card col-md-3 border-0 mx-auto py-4">
+        <img class="card-img-top" src="/icons/nhor/battery.svg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-text text-center">Battery Servicing</h3>
+        </div>
+      </div>
+      <div class="card col-md-3 border-0 mx-auto py-4">
+        <img class="card-img-top" src="/icons/nhor/engine.svg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-text text-center">Engine Maintenance</h3>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+
 <section id="contactForm">
     <h2>Contact Us</h2>
   <div class="mx-auto col-md-6">
-    <h3 class="">Request a Quote</h3>
     <form class="mx-auto" method="POST" action="https://www.formingo.co/submit/61b7b161-40c3-43a0-ba22-532c2105005c">
       <div class="form-row">
         <div class="col-sm-6 mb-2">
@@ -83,7 +126,6 @@ layout: default
         });
       }
 </script>
-<script async defer
-    src="https://www.google.com/maps/api/js?key=AIzaSyBzJnYwiippHCfNl1LFaD8C5OO4FFxSmfU
+<script src="https://www.google.com/maps/api/js?key=AIzaSyBzJnYwiippHCfNl1LFaD8C5OO4FFxSmfU
 &callback=initMap">
 </script>

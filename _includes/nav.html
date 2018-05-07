@@ -11,11 +11,21 @@
       <li class="nav-item">
         <a class="nav-link" href="#contactForm">Contact Us</a>
       </li>
+      <hr>
     </ul>
-    <a class="btn btn-outline-success my-2 my-sm-0">Directions</a>
+    <div>
+      <div class="col">
+        <div>
+          <i class="fas fa-phone"></i> {{site.phone}}</div>
+        <div>
+          <i class="fas fa-envelope"></i> {{site.email}}
+        </div>
+        <div>
+          <i class="fas fa-map-marker-alt"></i> {{site.business_address}}
+        </div>
+      </div>
+    </div>
   </div>
-  
-  
 </nav>
 
 <a href="tel:{{ site.phone}}" class="btn-floating btn-large bg-danger text-white"><i class="fas fa-phone"></i></a>

@@ -97,23 +97,25 @@ layout: default
 <section id="contactForm">
     <h2>Contact Us</h2>
   <div class="mx-auto col-md-6">
-    <form class="mx-auto" method="POST" action="https://www.formingo.co/submit/61b7b161-40c3-43a0-ba22-532c2105005c">
+    <form class="mx-auto" method="POST" action="https://formspree.io/{{site.email}}}">
       <div class="form-row">
         <div class="col-sm-6 mb-2">
-          <input class="form-control" type="text" required="required" name="full_name" placeholder="Name">
+          <input class="form-control" type="text" required="required" name="name" placeholder="Name">
         </div>
 
         <div class="col-sm-6 mb-2">
-          <input class="form-control" type="email" name="__replyto" required="required" placeholder="Your Email">
+          <input class="form-control" type="email" name="_replyto" required="required" placeholder="Your Email">
         </div>
       </div>
       <div class="form-group">
         <textarea class="form-control" name="message" id="message" placeholder="Message"></textarea>
       </div>
-      <input type="hidden" name="__redirect" value="{{ site.url }}">
       <div class="row mb-3">
         <input class="btn btn-primary mx-auto" type="submit" value="Request a Quote">
       </div>
+      <input type="hidden" name="_subject" value="New Contact Form Submission" />
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="hidden" name="_next" value="{{ site.url }}" />
     </form>
     </div>  <!-- /.col-6 RIGHT PANEL -->
 

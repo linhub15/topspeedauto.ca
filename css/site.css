@@ -89,3 +89,8 @@ img {
   font-size: 1.6rem;
   line-height: 56px;
 }
+
+div#navLocation svg.fa-map-marker-alt {
+  margin-left: 2px;
+  margin-right: 2px;
+}

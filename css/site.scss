@@ -1,3 +1,6 @@
+---
+---
+
 section.banner {
   background-image: url("../images/TSA_banner.jpg");
   background-repeat: no-repeat;
@@ -107,4 +110,14 @@ img {
 div#navLocation svg.fa-map-marker-alt {
   margin-left: 2px;
   margin-right: 2px;
+}
+
+
+.service-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-list li {
+  
 }

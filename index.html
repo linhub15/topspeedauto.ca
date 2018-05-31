@@ -32,8 +32,8 @@ layout: default
           <li>
             <span class="weekday">Friday</span>
             <span class="time">9:00 AM - 6:00 PM</span></li>
-          <li>
-            <span class="weekday">Saturday (By Appointment)</span>
+          <li class="d-flex justify-content-between align-items-center">
+            <span class="weekday">Saturday (Appointments)</span>
             <span class="time">9:00 AM - 1:00 PM</span></li>
           <li>
             <span class="weekday">Sunday</span>
@@ -56,6 +56,7 @@ layout: default
         <h3>Oil Change</h3>
       </div>
       <div class="col-md-7">
+        <p>Up to 5L of oil (5W20 or 5W30)</p>
         <ul class="list-group">
           <li class="list-group-item d-flex justify-content-between align-items-center">Regular Oil Change<span>$45.95</span></li>
           <li class="list-group-item d-flex justify-content-between align-items-center">Full Synthetic Oil change<span>$75.85</span></li>
@@ -70,8 +71,9 @@ layout: default
       </div>
       <div class="col-md-7">
         <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center">Winter/Summer Tire Change<span>$24.50 - $34.50</span></li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">Tire Repair <span>$27.50 / Tire</span></li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">Mount &amp; Balance Tire<span>$24.50 - $34.50</span></li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">Tire Change over on rims<span>$39.95</span></li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">Tire Repair <span>$29.50 / Tire</span></li>
           <li class="list-group-item d-flex justify-content-between align-items-center">Additional patches on repaired tires<span>$10.00</span></li>
           <li class="list-group-item d-flex justify-content-between align-items-center">Wheel Balance<span>$65.00</span></li>
           <li class="list-group-item d-flex justify-content-between align-items-center">Wheel Alignment &amp; Balance <span>$120.00</span></li>
@@ -109,12 +111,13 @@ layout: default
     <div class="row my-5">
       <div class="col-md-4 text-center mb-3">
         <img src="icons/nhor/inspections.svg">
-        <h3>Inspections</h3>
+        <h3>Inspections &amp; Other</h3>
       </div>
       <div class="col-md-7">
         <ul class="list-group">
           <li class="list-group-item d-flex justify-content-between align-items-center">Insurance Inspection <span>$75.00</span></li>
           <li class="list-group-item d-flex justify-content-between align-items-center">Pre-Purchase Inspection with Engine Computer Scan <span>$95.00</span></li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">A/C System EVAC and Recharge<span>$99.00</span></li>
         </ul>
       </div>
     </div>
@@ -123,28 +126,43 @@ layout: default
 
 
 <section id="contactForm">
-    <h2>Need a Quote? Contact Us</h2>
+    <h2>Request a Quote?</h2>
   <div class="mx-auto col-md-6">
-    <form class="mx-auto" method="POST" action="https://formspree.io/{{site.email}}}">
+    <form class="mx-auto" method="POST" action="https://formspree.io/{{site.email}}">
       <div class="form-row">
         <div class="col-sm-6 mb-2">
-          <input class="form-control" type="text" required="required" name="name" placeholder="Name">
+          <input class="form-control" type="text" required="required" name="name" placeholder="Name *">
         </div>
 
         <div class="col-sm-6 mb-2">
-          <input class="form-control" type="email" name="_replyto" required="required" placeholder="Your Email">
+          <input class="form-control" type="email" name="ReplyTo" required="required" placeholder="Your Email *">
         </div>
+        <h5 class="col-sm-12 text-center">Vehicle Information</h5>
+        <div class="input-group col-sm-12 mb-1">
+          <input class="form-control" type="text" name="Make" placeholder="Make">
+          <input class="form-control" type="text" name="Model" placeholder="Model">
+          <input class="form-control" type="text" name="Year" placeholder="Year">
+        </div>
+
+        <p class="col-sm-12 text-center my-0">or</p>
+        <div class="col-sm-12">
+          <input class="form-control" type="text" name="VIN" placeholder="VIN e.g. 1FAHP26W49G252740">
+        </div>
+
       </div>
-      <div class="form-group">
-        <textarea class="form-control" name="message" id="message" placeholder="Message"></textarea>
+      <hr>
+      <h5 class="col-sm-12 text-center">What needs fixing?</h5>
+      <div class="form-group"> 
+        <textarea class="form-control" name="message" id="message" placeholder="Let us know what needs fixing here!"></textarea>
       </div>
       <div class="row mb-3">
         <input class="btn btn-primary mx-auto" type="submit" value="Request a Quote">
       </div>
-      <input type="hidden" name="_subject" value="New Contact Form Submission" />
-      <input type="text" name="_gotcha" style="display:none" />
-      <input type="hidden" name="_next" value="{{ site.url }}" />
+      <!-- <input type="hidden" name="_subject" value="New Contact Form Submission" /> -->
+      <!-- <input type="text" name="_gotcha" style="display:none" /> -->
+      <!-- <input type="hidden" name="_next" value="{{ site.url }}" /> -->
     </form>
+</form>
     </div>  <!-- /.col-6 RIGHT PANEL -->
 
 </section>

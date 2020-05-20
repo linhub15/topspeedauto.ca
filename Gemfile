@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gem "jekyll", "~> 3.6.2"
+gem "jekyll", "~> 4.0.1"
 
 
 # If you have any plugins, put them here!

@@ -1,8 +1,5 @@
----
----
-
 section.banner {
-  background-image: url("../images/TSA_banner.jpg");
+  background-image: url("/imgs/TSA_banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   /*height: 25vw;*/
@@ -115,8 +112,4 @@ div#navLocation svg.fa-map-marker-alt {
 .service-list {
   list-style: none;
   padding: 0;
-}
-
-.service-list li {
-  
 }

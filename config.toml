@@ -1,0 +1,18 @@
+baseURL = "https://topspeedauto.ca"
+languageCode = "en-us"
+
+title = "Top Speed Auto"
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[Params]
+  email = "topspeedautotsa@gmail.com"
+  phone = "780-455-6533"
+  cell = "780-695-8333"
+  business_address = "16718D-111 Ave NW, Edmonton, AB T5M 2S5"
+  description = """
+    An Edmonton local mechanic shop expert at fixing import vehicles, maintenance, and inspiections.\
+    We do tires, brakes, shocks, and light-body work.\
+  """
+  facebook_url = "https://www.facebook.com/topspeedautoedmonton/"
+  instagram_url = "https://www.instagram.com/explore/locations/1723186284586354/top-speed-auto/"

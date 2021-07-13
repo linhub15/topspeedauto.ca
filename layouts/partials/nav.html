@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand">Top Speed Auto</a>
+  <a class="navbar-brand" href="/">Top Speed Auto</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -13,13 +13,13 @@
       </li>
     </ul>
     <div class="">
-      <a id="" class="mx-2 social-media-link" href="{{ site.facebook_url }}"><i class="fab fa-facebook-f fa-2x"></i>
+      <a id="" class="mx-2 social-media-link" href="{{ .Site.Params.facebook_url }}"><i class="fab fa-facebook-f fa-2x"></i>
 </a>
-      <a id="" class="mx-2 social-media-link" href="{{ site.instagram_url }}">
+      <a id="" class="mx-2 social-media-link" href="{{ .Site.Params.instagram_url }}">
         <i class="fab fa-instagram fa-2x"></i>
       </a>
     </div>
   </div>
 </nav>
 
-<a href="tel:{{ site.phone }}" class="btn-floating btn-large bg-danger text-white"><i class="fas fa-phone"></i></a>
+<a href="tel:{{ .Site.Params.phone }}" class="btn-floating btn-large bg-danger text-white"><i class="fas fa-phone"></i></a>

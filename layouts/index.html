@@ -1,6 +1,6 @@
----
-layout: default
----
+{{ define "main" }}
+<main aria-role="main">
+
 <section class="banner">
   <div class="mx-auto xy-center align-middle">
     <h1 class="text-light">Top Speed Auto</h1>
@@ -130,7 +130,7 @@ layout: default
 <section id="contactForm">
     <h2>Request a Quote?</h2>
   <div class="mx-auto col-md-6">
-    <form class="mx-auto" method="POST" action="https://formspree.io/{{site.email}}">
+    <form class="mx-auto" method="POST" action="https://formspree.io/{{ $.Site.Params.email }}">
       <div class="form-row">
         <div class="col-sm-6 mb-2">
           <input class="form-control" type="text" required="required" name="name" placeholder="Name *">
@@ -160,11 +160,13 @@ layout: default
       <div class="row mb-3">
         <input class="btn btn-primary mx-auto" type="submit" value="Request a Quote">
       </div>
-      <!-- <input type="hidden" name="_subject" value="New Contact Form Submission" /> -->
-      <!-- <input type="text" name="_gotcha" style="display:none" /> -->
-      <!-- <input type="hidden" name="_next" value="{{ site.url }}" /> -->
     </form>
 </form>
     </div>  <!-- /.col-6 RIGHT PANEL -->
 
 </section>
+
+
+
+</main>
+{{ end }}

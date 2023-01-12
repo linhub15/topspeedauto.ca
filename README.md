@@ -10,8 +10,3 @@ Github action builds and deploys the site to production
 
 ## Production preview
 * http://topspeedauto-ca.preview-domain.com
-
-
-## TODO
-* decide to use cloudflare pages or not...
-* setup github workflow or cloudflare pages

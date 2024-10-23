@@ -3,7 +3,7 @@ languageCode = "en-us"
 
 title = "Top Speed Auto"
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 
 [Params]
   email = "topspeedautotsa@gmail.com"

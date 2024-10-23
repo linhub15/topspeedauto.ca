@@ -1,5 +1,4 @@
 # top-speed-auto-site
-Runs on Hugo `v0.85.0`
 
 `hugo` - build production artifacts in the `public` directory
 

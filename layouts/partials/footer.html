@@ -1,27 +1,38 @@
 <footer class="my-5">
+  <div class="flex flex-col items-center mx-auto w-fit py-5 text-center gap-4">
+    <img src="imgs/amvic_logo.png" alt="AMVIC">
+    <div>AMVIC licensed business</div>
+  </div>
+  <div class="my-4 text-center">
+    <div>**We offer to return all parts removed from the vehicle back to the consumer.</div>
+    <div>**We offer manufacturer's warranty on Parts and Labour - Terms and Conditions apply.</div>
+  </div>
   <div class="text-center">
-    <div class="">
-      <a class="" href="https://g.page/topspeedauto">{{ .Site.Params.business_address }}</a>
+    <div>
+      <a href="https://g.page/topspeedauto">{{ .Site.Params.business_address }}</a>
     </div>
-  
-      <div class="">
-        <p class="">&copy; {{ now.Year }} Top Speed Auto | <a href="/citations">Citations</a></p>
-      </div>
+
+    <div>
+      <p>&copy; {{ now.Year }} Top Speed Auto | <a href="/citations">Citations</a></p>
     </div>
-  </footer>
-  
-  <!-- JQuery v3.1.1 -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  
-  <!-- Tether v1.4.0 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  
-  <!-- Bootstrap v4.0 core JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  
-  <!-- Font Awesome 5.0.6 JavaScript -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  
-  <!-- Custom Site JavaScript -->
-  {{ $js := (resources.Get "js/site.js" | resources.Minify).RelPermalink }}
-  <script src="{{ $js }}"></script>
+  </div>
+</footer>
+
+<!-- JQuery v3.1.1 -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<!-- Tether v1.4.0 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+  integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+<!-- Bootstrap v4.0 core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+  integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<!-- Font Awesome 5.0.6 JavaScript -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+<!-- Custom Site JavaScript -->
+{{ $js := (resources.Get "js/site.js" | resources.Minify).RelPermalink }}
+<script src="{{ $js }}"></script>

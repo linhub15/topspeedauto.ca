@@ -124,3 +124,19 @@ div#navLocation svg.fa-map-marker-alt {
   list-style: none;
   padding: 0;
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.gap-4 {
+  gap: 1rem;
+}

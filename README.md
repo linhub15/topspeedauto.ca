@@ -1,11 +1,13 @@
-# top-speed-auto-site
+# Top Speed Auto Website
 
 `hugo` - build production artifacts in the `public` directory
 
 `hugo serve` - serve dev environment
 
 # Build
-Github action builds and deploys the site to production
+
+Cloudflare workers
 
 ## Production preview
-* http://topspeedauto-ca.preview-domain.com
+
+- https://topspeedauto-ca.pages.dev

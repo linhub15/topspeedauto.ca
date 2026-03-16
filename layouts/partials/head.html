@@ -1,28 +1,31 @@
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5N9WQ7GPZ3"></script>
+<script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-5N9WQ7GPZ3"
+></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-5N9WQ7GPZ3');
+    gtag("config", "G-5N9WQ7GPZ3");
 </script>
 
-
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="{{ $.Site.Params.description }}">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="{{ $.Site.Params.description }}" />
 
 <title>{{ .Title }}</title>
 
-<!-- Bootstrap v4.0 CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Tailwind -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 <!-- Site Master CSS -->
-{{ $css := (resources.Get "css/site.scss" | css.Sass | resources.Minify).RelPermalink }}
-<link rel="stylesheet" href="{{ $css }}">
+{{ $css := (resources.Get "css/site.scss" | css.Sass |
+resources.Minify).RelPermalink }}
+<link rel="stylesheet" href="{{ $css }}" />
 
 <!-- Favicons -->
-
